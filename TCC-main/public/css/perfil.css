@@ -1,0 +1,1019 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.logo {
+    height: 75px;
+}
+
+/* Fim Header */
+
+main {
+    align-items: stretch;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    min-height: 400px;
+    height: auto;
+    padding: 20px;
+}
+
+.carrinho-compras {
+    width: 35px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.carrinho-compras:hover {
+    transform: scale(1.1);
+}
+
+.voltarP {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+
+.botao-voltar {
+    width: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    filter: brightness(0.4);
+}
+
+.carrinho {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.minha-conta {
+    cursor: default;
+}
+
+h2 {
+    cursor: default;
+    white-space: nowrap;
+}
+
+.user {
+    color: black;
+}
+
+.icons-img {
+    width: 30px;
+    filter: brightness(2) contrast(0.7);
+    display: flex;
+}
+
+nav.menu-lateral {
+    width: 55px;
+    height: 400px;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+    transition: .4s;
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid rgb(224, 224, 224);
+    left: 0;
+}
+
+nav.menu-lateral-fn {
+    width: 55px;
+    height: 340px;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+    transition: .4s;
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid rgb(224, 224, 224);
+    left: 0;
+}
+
+.menu-lateral-fn.expandir {
+    width: 300px;
+}
+
+.menu-lateral.expandir {
+    width: 300px;
+}
+
+aside {
+    width: 40px;
+}
+
+nav.menu-lateral:hover,
+nav.menu-lateral-fn:hover {
+    width: 280px;
+}
+
+ul {
+    list-style-type: none;
+    height: 100%;
+}
+
+ul li.ativo {
+    background-color: rgb(206, 206, 206);
+}
+
+.item-menu.ativo:hover {
+    background-color: rgb(206, 206, 206);
+    color: #fff;
+}
+
+ul li.item-menu:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+ul li.item-menu {
+    transition: .1s;
+}
+
+ul li.item-menu-logoff:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.item-menu-logoff {
+    margin-top: 100px;
+}
+
+ul li.item-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 15px 3px;
+    display: flex;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+ul li.item-menu-logoff a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 15px 3px;
+    display: flex;
+    white-space: nowrap;
+    line-height: 30px;
+}
+
+.menu-lateral.expandir .txt-logoff {
+    margin-left: 25px;
+    opacity: 1;
+}
+
+ul li.item-menu-logoff a .txt-logoff {
+    margin-left: 50px;
+    transition: 1s;
+    /* opacity: 0; */
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 50px;
+    transition: 1s;
+    /* opacity: 0; */
+}
+
+.menu-lateral.expandir .txt-link {
+    margin-left: 25px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon>img {
+    font-size: 30px;
+    margin-left: 9px;
+}
+
+ul li.item-menu-logoff a .icon>img {
+    font-size: 15px;
+    margin-left: 9px;
+}
+
+img.gato {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.boas-vindas {
+    margin-left: 105px;
+    padding: 15px;
+    margin-top: -75px;
+    margin-bottom: 30px;
+}
+
+.img-txt {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.flex-enviar {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+label.enviar-foto {
+    padding: 2px;
+    margin-top: 5px;
+    margin-left: 13px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(116, 116, 116);
+    background: none;
+    font-size: 15px;
+    margin-bottom: -25px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-section {
+    margin-top: 40px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dados-pessoais {
+    display: flex;
+    gap: 50px;
+}
+
+.dados {
+    flex-direction: column;
+    display: flex;
+}
+
+label {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+input {
+    padding: 6px 8px;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid rgb(160, 160, 160);
+    width: 200px;
+    font-size: 15px;
+}
+
+.alterar-dados {
+    height: 30px;
+    width: 150px;
+    border: none;
+    background-color: #BD5532;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-top: 48px;
+    margin-left: 51px;
+}
+
+.alterar-dados:hover {
+    background-color: #8e3315;
+}
+
+button,
+a {
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+button:active,
+a:active {
+    background: none;
+}
+
+/* Tela de endereco */
+
+.dados-endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.linha-endereco {
+    display: flex;
+    gap: 5px;
+}
+
+.campo-endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-endereco.rua {
+    margin-right: 10px;
+}
+
+.campo-endereco.bairro {
+    margin-right: 10px;
+}
+
+.campo-endereco.cep {
+    width: 80px;
+    margin-right: 28px;
+}
+
+.campo-endereco.cidade {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.select-uf {
+    width: 40px;
+    padding: 6px 8px;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid rgb(160, 160, 160);
+    font-size: 15px;
+    margin-right: 210px;
+}
+
+.input-txt {
+    width: 100%;
+}
+
+.campo-endereco label {
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.campo-endereco input {
+    width: 250px;
+    padding: 6px 8px;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid rgb(160, 160, 160);
+    font-size: 15px;
+}
+
+.campo-endereco input.numero {
+    width: 50px;
+    text-align: center;
+}
+
+.campo-endereco input.cep {
+    width: 80px;
+    text-align: center;
+}
+
+.select-uf {
+    width: 60px;
+}
+
+.botoes-endereco {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn-salvar-endereco {
+    height: 30px;
+    width: 150px;
+    border: none;
+    background-color: #BD5532;
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-top: 48px;
+    margin-left: 51px;
+}
+
+#btn-salvar-endereco:hover {
+    background-color: #8e3315;
+}
+
+/* Sessão de pedidos */
+
+.pedidos-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.pedido-card {
+    background-color: #e9e9e9;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    height: 150px;
+}
+
+.pedido-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pedido-id {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pedido-detalhes {
+    display: flex;
+    gap: 15px;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.img-produto {
+    background-color: grey;
+    height: 95px;
+    width: 120px;
+}
+
+.pedido-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pedido-descricao p {
+    margin: 2px 0;
+}
+
+.produto-nome {
+    font-weight: bold;
+}
+
+.pedido-preco {
+    min-width: 180px;
+}
+
+.pedido-preco p {
+    margin: 2px 0;
+}
+
+.pedido-situacao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.pedido-situacao p{
+    background-color: #BD5532;
+    color: white;
+    border: none;
+    width: 205px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    text-align: center;
+    cursor: default;
+}
+
+.btn-acompanhar:hover {
+    background-color: #e67e22;
+}
+
+.pedido-container{
+    margin-bottom: 15px; 
+}
+
+.pedido-descricao strong,
+.pedido-preco strong
+,.pedido-situacao p strong {
+    font-weight: 600;
+}
+
+/* Sessão de produtos cadastrados */
+
+.produtos-cadastrados {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 189, 189);
+    min-height: 400px;
+    width: 850px;
+    margin-left: 140px;
+}
+
+.titulo-categoria {
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    height: 40px;
+    align-items: center;
+    gap: 380px;
+    padding-left: 20px;
+}
+
+select {
+    padding: 3px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.produto-info {
+    border: 1px solid rgb(189, 189, 189);
+    width: 100%;
+    height: 90px;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+}
+
+.box-img {
+    height: 100%;
+    width: 100px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.info-txt {
+    flex: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    max-height: 2.4em;
+}
+
+.info-txt-mp {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap;
+    margin-left: 70px;
+}
+
+.categoria-txt {
+    flex: 1;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.btns {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.btns button {
+    width: 90px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.btns button:first-child {
+    background-color: grey;
+}
+
+.txt-alterar {
+    color: white;
+    text-decoration: none;
+}
+
+.btns button:first-child:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+.btns button:last-child {
+    background-color: red;
+}
+
+.btns button:last-child:hover {
+    background-color: rgb(180, 0, 0);
+}
+
+/* Esconde as seções por padrão */
+section>div {
+    display: none;
+}
+
+/* Depois que o JS carregar, adicionamos uma classe que permite controlar as seções */
+.js-enabled section>div {
+    display: none;
+    /* mantém escondido */
+}
+
+.js-enabled section>div.active {
+    display: block;
+    /* só mostra a ativa */
+}
+
+/* Estilos para o Toastify com botões */
+.toastify-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.toastify-button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+}
+
+.toastify-confirm {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.toastify-cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+/* 821px */
+@media screen and (max-width: 821px) {
+
+    html,
+    body,
+    main {
+        width: 100%;
+        max-width: 821px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    .minha-conta {
+        font-size: 23px;
+    }
+
+    .carrinho {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    img.carrinho-compras {
+        width: 28px;
+    }
+
+    .dados-pessoais {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 450px;
+    }
+
+    .dados {
+        width: 184px;
+    }
+
+    aside {
+        margin-top: 10px;
+    }
+
+    .gato {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    label {
+        margin-bottom: 3px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    input {
+        padding: 5px 6px;
+        border-radius: 3px;
+        background-color: white;
+        border: 1px solid rgb(160, 160, 160);
+        width: 170px;
+        font-size: 14px;
+    }
+
+    .alterar-dados {
+        height: 30px;
+        width: 120px;
+        font-size: 15px;
+        margin-top: 38px;
+        margin-left: 63px;
+    }
+
+    div.img-txt {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img.botao-voltar {
+        width: 20px;
+    }
+
+    nav.menu-lateral {
+        width: 40px;
+        height: 385px;
+    }
+
+    nav.menu-lateral:hover {
+        width: 200px;
+    }
+
+    ul li.item-menu a .icon>img {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    ul li.item-menu-logoff a .icon>img {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+
+    img.icons-img {
+        width: 23px;
+    }
+
+    ul li.item-menu a {
+        font-size: 14px;
+        padding: 17px 3px;
+        line-height: 23px;
+    }
+
+    ul li.item-menu-logoff a {
+        line-height: 23px;
+    }
+
+}
+
+@media screen and (max-width: 431px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body,
+    main {
+        width: 100%;
+        max-width: 400px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main {
+        height: 480px;
+    }
+
+    section {
+        width: 100%;
+        transition: margin-left 0.3s ease;
+        margin-left: 10px;
+        margin-top: 70px;
+    }
+
+    .menu-expandido section {
+        margin-left: 120px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .minha-conta {
+        font-size: 20px;
+    }
+
+    .voltar {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 5px;
+        width: 400px;
+    }
+
+    .carrinho {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    img.carrinho-compras {
+        width: 28px;
+        background: transparent;
+        background-color: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .carrinho-compras:active {
+        transform: scale(0.95);
+    }
+
+    .dados-pessoais {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 184px;
+    }
+
+    .perfil {
+        display: flex;
+        justify-content: center;
+        width: 184px;
+    }
+
+    .dados {
+        width: 184px;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+
+    .gato {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: grey;
+    }
+
+
+    .boas-vindas {
+        padding: 15px 0;
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
+    .enviar-foto {
+        padding: 0;
+        margin-top: 2px;
+        margin-left: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        text-align: left;
+        white-space: nowrap;
+        color: rgb(116, 116, 116);
+    }
+
+    label {
+        margin-bottom: 3px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    input {
+        padding: 4px 6px;
+        border-radius: 3px;
+        background-color: white;
+        border: 1px solid rgb(160, 160, 160);
+        width: 170px;
+        font-size: 13px;
+    }
+
+    .alterar-dados {
+        height: 30px;
+        width: 100px;
+        border: none;
+        background-color: #BD5532;
+        color: white;
+        cursor: pointer;
+        transition: 0.8s;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 2px;
+        margin-top: 15px;
+        margin-left: 70px;
+    }
+
+    div.img-txt {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img.botao-voltar {
+        width: 20px;
+    }
+
+    nav.menu-lateral {
+        width: 40px;
+        position: relative;
+        margin-left: -20px;
+        height: 385px;
+    }
+
+    nav.menu-lateral:hover {
+        width: 160px;
+    }
+
+    ul li.item-menu a .icon>img {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    ul li.item-menu-logoff a .icon>img {
+        font-size: 10px;
+        margin-left: 4px;
+    }
+
+    img.icons-img {
+        width: 23px;
+    }
+
+    ul li.item-menu a {
+        font-size: 14px;
+        padding: 17px 3px;
+        line-height: 23px;
+    }
+
+    ul li.item-menu-logoff a {
+        line-height: 23px;
+    }
+
+    .menu-lateral {
+        left: -200px;
+        transition: left 0.3s ease;
+    }
+
+    body.menu-expandido .menu-lateral {
+        left: 0;
+    }
+}

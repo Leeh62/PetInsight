@@ -1,0 +1,880 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Inicio Login */
+
+.voltar {
+    color: rgb(37, 37, 37);
+    margin-left: -230px;
+    display: flex;
+    position: fixed;
+    font-size: 25px;
+}
+
+.voltar:hover {
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+.login_dog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('../img/dog.jpg');
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área da tela */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-position: center;
+    /* Centraliza a imagem no fundo */
+}
+
+.login-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    /* Defina um tamanho adequado */
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 610px;
+    padding: 20px;
+}
+
+.login-titulo {
+    margin: 20px 0 110px;
+    font-size: 35px;
+    cursor: default;
+}
+
+.login-label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+    font-size: 18px;
+}
+
+.login-input {
+    margin: -50px 0 250px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.input {
+    width: 300px;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    background-color: #F3F3F3;
+}
+
+.input:hover {
+    background-color: #F3F3F3;
+}
+
+.input:focus {
+    border: rgb(134, 134, 134) solid 2px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.input::placeholder {
+    color: #a2a2a2;
+    font-size: 16px;
+}
+
+.login-link {
+    margin: -240px 0 100px 160px;
+}
+
+.login-a {
+    color: #38C08F;
+    text-decoration: none;
+}
+
+.login-a:hover {
+    text-decoration: underline;
+}
+
+.login-botao {
+    margin: -60px 0 20px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    height: 38px;
+    margin-left: 5px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #BD5532;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #8e3315;
+    transition: 0.8s;
+}
+
+.login-p {
+    margin: 0 0 20px;
+    font-size: 17px;
+    cursor: default;
+}
+
+.login-cadastro {
+    text-decoration: none;
+    color: #38C08F;
+    font-weight: 600;
+}
+
+.login-cadastro:hover {
+    text-decoration: underline;
+}
+
+.login-resto {
+    margin: 30px 0 0 0;
+    cursor: default;
+}
+
+.login-conect {
+    cursor: default;
+}
+
+.login-fb {
+    background: none;
+    border: none;
+}
+
+.login-images {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-icon {
+    width: 30px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.login-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Fim Login */
+
+/* Inicio Cadastro */
+
+.cadastro_cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('../img/cat.jpg');
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área da tela */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-position: center;
+    /* Centraliza a imagem no fundo */
+}
+
+.cadastro-voltar {
+    color: rgb(37, 37, 37);
+    margin-top: -45px;
+    margin-left: -225px;
+    display: flex;
+    position: fixed;
+    font-size: 25px;
+}
+
+.cadastro-voltar:hover {
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+.cadastro-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    /* Defina um tamanho adequado */
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.cadastro-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 650px;
+    padding: 20px;
+}
+
+.cadastro-titulo {
+    margin: 10px 0 20px 0;
+    font-size: 30px;
+    cursor: default;
+}
+
+.cadastro-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.cadastro-required {
+    color: rgb(255, 0, 0);
+}
+
+.cadastro-input {
+    margin: 15px 0 160px;
+    border-radius: 3px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.input-cadastro {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #F3F3F3;
+    font-size: 16px;
+}
+
+.input-cadastro:hover {
+    background-color: #F3F3F3;
+}
+
+.input-cadastro:focus {
+    border: rgb(134, 134, 134) solid 2px;
+    outline: none;
+    border-radius: 3px;
+}
+
+input[name="Data"] {
+    appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cadastro-botao {
+    margin: -135px 0 30px 0;
+}
+
+.botao-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #BD5532;
+    cursor: pointer;
+    transform: .8s;
+}
+
+.botao-cadastro:hover {
+    background-color: #8e3315;
+}
+
+.botao-redefinir {
+    margin-bottom: 300px !important;
+    position: absolute !important;
+    transform: .8s;
+}
+
+.cadastro-p {
+    margin: -10px 0 0;
+    font-size: 17px;
+    cursor: default;
+}
+
+/* Fim Cadastro */
+
+/* Inicio Senha/Redefinir */
+
+.senha-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 550px;
+    padding: 20px;
+    margin-top: -90px;
+}
+
+.redefinir-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 590px;
+    padding: 20px;
+}
+
+.senha-titulo {
+    margin: 120px 0 50px 0;
+    font-size: 30px;
+    cursor: default;
+}
+
+.senha-input {
+    margin: 0 0 360px 0;
+    border-radius: 3px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.botao-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #BD5532;
+    cursor: pointer;
+    margin-top: -280px;
+}
+
+.botao-senha:hover {
+    background-color: #8e3315;
+}
+
+.botao-redefinir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #BD5532;
+    cursor: pointer;
+    margin: -150px 0 0;
+
+}
+
+.botao-redefinir:hover {
+    background-color: #8e3315;
+}
+
+.senha-span {
+    display: flex;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #8B8B8B;
+    cursor: default;
+}
+
+/* Fim Senha/Redefinir */
+
+@media screen and (max-width: 1025px) {
+    .login-content {
+        width: 450px;
+        height: 560px;
+    }
+
+    .login-titulo {
+        font-size: 28px;
+        margin-top: 15px;
+        margin-bottom: 90px;
+    }
+
+    .login-input {
+        margin-top: -70px;
+    }
+
+    .login-label {
+        font-size: 18px;
+        margin-left: -5px;
+    }
+
+    .input {
+        width: 310px;
+    }
+
+    .input::placeholder {
+        font-size: 17px;
+    }
+
+    .login-a {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .botao {
+        font-size: 20px;
+        height: 35px;
+        width: 310px;
+    }
+
+    .login-p,
+    .login-cadastro,
+    .login-resto,
+    .login-conect {
+        font-size: 18px;
+    }
+
+    .login-icon {
+        width: 30px;
+    }
+
+    .voltar {
+        font-size: 23px;
+        margin-left: -200px;
+        margin-top: 5px;
+    }
+
+    /* Fim login */
+
+    .cadastro-content {
+        width: 450px;
+        height: 600px;
+    }
+
+    .cadastro-titulo {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .cadastro-label {
+        font-size: 18px;
+        margin-left: 11px;
+        margin-top: 20px;
+    }
+
+    .input-cadastro {
+        margin-left: 10px;
+        width: 310px;
+    }
+
+    .input-cadastro::placeholder {
+        font-size: 16px;
+    }
+
+    .botao-cadastro {
+        font-size: 20px;
+        margin-left: 10px;
+        height: 35px;
+        width: 310px;
+    }
+
+    .cadastro-p {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .cadastro-voltar {
+        font-size: 25px;
+        margin-left: -210px;
+    }
+
+    /* Fim cadastro */
+
+    .senha-titulo {
+        font-size: 28px;
+        margin-top: 110px;
+        margin-bottom: 50px;
+    }
+
+    .botao-redefinir {
+        font-size: 20px;
+        height: 35px;
+        width: 310px;
+        margin-top: -180px;
+    }
+
+    #redefinir-content {
+        height: 520px;
+    }
+
+    #redefinir-titulo {
+        margin-top: 170px;
+        margin-bottom: 40px;
+    }
+
+    .senha-span {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
+    #Emailsenha,
+    #Senha,
+    #senhaC {
+        margin-left: 5px;
+        font-size: 21px;
+    }
+
+    .senha-input input::placeholder {
+        font-size: 18px;
+    }
+
+    .botao-senha {
+        font-size: 20px;
+        height: 35px;
+        width: 310px;
+    }
+
+    #senha-label {
+        margin-left: 1px;
+    }
+
+    #senha-content {
+        height: 450px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .login-content {
+        width: 430px;
+        height: 540px;
+    }
+
+    .login-titulo {
+        font-size: 28px;
+        margin-top: 15px;
+        margin-bottom: 90px;
+    }
+
+    .login-input {
+        margin-top: -70px;
+    }
+
+    .login-label {
+        font-size: 18px;
+        margin-left: -5px;
+    }
+
+    .input {
+        width: 310px;
+    }
+
+    .input::placeholder {
+        font-size: 17px;
+    }
+
+    .login-a {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .botao {
+        font-size: 20px;
+        height: 35px;
+        width: 310px;
+    }
+
+    .login-p,
+    .login-cadastro,
+    .login-resto,
+    .login-conect {
+        font-size: 18px;
+    }
+
+    .login-icon {
+        width: 30px;
+    }
+
+    .voltar {
+        font-size: 23px;
+        margin-left: -200px;
+        margin-top: 5px;
+    }
+
+    /* Fim login */
+
+    .cadastro-content {
+        width: 450px;
+        height: 600px;
+    }
+
+    .cadastro-titulo {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .cadastro-label {
+        font-size: 18px;
+        margin-left: 11px;
+        margin-top: 20px;
+    }
+
+    .input-cadastro {
+        margin-left: 10px;
+        width: 310px;
+    }
+
+    .input-cadastro::placeholder {
+        font-size: 16px;
+    }
+
+    .botao-cadastro {
+        font-size: 20px;
+        margin-left: 10px;
+        height: 35px;
+        width: 310px;
+    }
+
+    .cadastro-p {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .cadastro-voltar {
+        font-size: 25px;
+        margin-left: -210px;
+    }
+
+    /* Fim cadastro */
+
+    .senha-titulo {
+        font-size: 28px;
+        margin-top: 120px;
+    }
+
+    .botao-redefinir {
+        font-size: 20px;
+        height: 35px;
+        width: 310px;
+        margin-top: -180px;
+    }
+
+    #redefinir-content {
+        height: 520px;
+    }
+
+    #redefinir-titulo {
+        margin-top: 170px;
+        margin-bottom: 40px;
+    }
+
+    .senha-span {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
+    #Emailsenha,
+    #Senha,
+    #senhaC {
+        margin-left: 5px;
+        font-size: 21px;
+    }
+
+    .senha-input input::placeholder {
+        font-size: 18px;
+    }
+
+    .botao-senha {
+        font-size: 20px;
+        height: 35px;
+        width: 310px;
+        margin-top: -300px;
+    }
+
+    #senha-label {
+        margin-left: 1px;
+    }
+
+    #senha-content {
+        height: 420px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .login-content {
+        width: 350px;
+        height: 500px;
+    }
+
+    .login-titulo {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 90px;
+    }
+
+    .login-input {
+        margin-top: -70px;
+    }
+
+    .login-label {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .input {
+        width: 280px;
+    }
+
+    .input::placeholder {
+        font-size: 13px;
+    }
+
+    .login-a {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .botao {
+        font-size: 18px;
+        height: 30px;
+        width: 280px;
+    }
+
+    .login-p,
+    .login-cadastro,
+    .login-resto,
+    .login-conect {
+        font-size: 15px;
+    }
+
+    .login-icon {
+        width: 25px;
+    }
+
+    .voltar {
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: -160px;
+    }
+
+    /* Fim login */
+
+    .cadastro-content {
+        width: 350px;
+        height: 600px;
+    }
+
+    .cadastro-titulo {
+        font-size: 25px;
+        margin-top: -20px;
+    }
+
+    .cadastro-label {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .input-cadastro {
+        margin-left: 10px;
+        width: 280px;
+    }
+
+    .input-cadastro::placeholder {
+        font-size: 13px;
+    }
+
+    .botao-cadastro {
+        font-size: 18px;
+        margin-left: 10px;
+        height: 30px;
+        width: 280px;
+    }
+
+    .cadastro-p {
+        font-size: 15px;
+    }
+
+    .cadastro-voltar {
+        font-size: 20px;
+        margin-left: -160px;
+        margin-top: -38px;
+    }
+
+    /* Fim cadastro */
+
+    .senha-titulo {
+        font-size: 25px;
+    }
+
+    .botao-redefinir {
+        font-size: 18px;
+        height: 30px;
+        width: 280px;
+    }
+
+    #redefinir-content {
+        height: 520px;
+    }
+
+    .senha-span {
+        margin-left: 5px
+    }
+
+    #Emailsenha,
+    #Senha,
+    #senhaC {
+        margin-left: 0;
+    }
+
+    .botao-senha {
+        font-size: 18px;
+        height: 30px;
+        width: 280px;
+    }
+
+    #senha-label {
+        margin-left: 1px;
+    }
+
+    #senha-content {
+        height: 420px;
+        margin-left: 30px;
+    }
+}

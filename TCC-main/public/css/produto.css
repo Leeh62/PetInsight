@@ -1,0 +1,1557 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Início Header */
+
+.header {
+    margin-top: -90px;
+    margin-bottom: -130px;
+    height: 350px;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 700px;
+    margin-left: 50px;
+}
+
+.header-img {
+    width: 120px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+
+.header-entrar {
+    position: relative;
+    text-decoration: none;
+    color: #38C08F;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.header-entrar::after {
+    content: "";
+    position: absolute;
+    background-color: #38C08F;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-entrar:hover::after {
+    width: 85%;
+}
+
+.header-cadastro {
+    left: -18px;
+    position: relative;
+    text-decoration: none;
+    color: #38C08F;
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+
+.header-cadastro::after {
+    content: "";
+    position: absolute;
+    background-color: #38C08F;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-cadastro:hover::after {
+    width: 100%;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.header-link-tema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-link-none {
+    margin-right: 30px;
+}
+
+.car {
+    margin-left: 40px;
+    margin-right: 35px;
+    color: black;
+    font-size: 30px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+img.user-img{
+    width: 35px;
+    margin-bottom: 6px;
+}
+
+img.user-imgF{
+    width: 35px;
+    margin-bottom: 6px;
+}
+
+.header-tema {
+    width: 35px;
+    margin-bottom: 1.5px;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-link-none {
+    text-decoration: none;
+}
+
+.car {
+    margin-left: 40px;
+    margin-right: 35px;
+    color: black;
+    font-size: 30px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+main {
+    background-color: rgb(248, 248, 248);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.Produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+    height: 380px;
+    padding-left: 50px;
+}
+
+
+.voltar {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    background-color: rgb(255, 255, 255);
+}
+
+.botao-voltar {
+    width: 25px;
+    filter: brightness(0.4);
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+.img-produto {
+    width: 450px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(187, 187, 187);
+}
+
+.foto {
+    width: auto;
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+.info {
+    margin-left: 35px;
+    width: 600px;
+}
+
+.preço {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(165, 9, 9);
+    margin-top: 5px;
+}
+
+.info p:nth-of-type(2) {
+    font-size: 18px;
+    color: rgb(68, 68, 68);
+    margin-top: 25px;
+    width: 500px;
+}
+
+.info h2 {
+    font-size: 25px;
+    
+}
+
+.tamanho {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.input-radio {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tamanho p {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.input-add {
+    font-size: 20px;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    color: black;
+    background-color: #ebebeb;
+}
+
+.button-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+    width: 30px;
+    border: none;
+    height: 30px;
+    border-radius: 2px;
+    border-radius: 2px 0 0 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.button-add2 {
+    background-color: #d3d3d3;
+    width: 30px;
+    border: none;
+    height: 30px;
+    border-radius: 2px;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.compra {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+
+.add-carrinho {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+}
+
+.add-carrinho img {
+    height: 50px;
+    opacity: 0.9;
+    transition: .8s;
+}
+
+.add-carrinho img:hover {
+    transform: scale(1.05);
+}
+
+.button-comprar {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #BD5532;
+    transition: 0.8s;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button-comprar:hover {
+    background-color: #8e3315;
+}
+
+.compra-qtde {
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.qtde-label{
+    margin-right: 30px;
+}
+
+.descricao-container {
+    background-color: rgb(241, 241, 241);
+    padding: 20px 40px 50px;
+    flex-direction: column;
+}
+
+.descricao-container h2 {
+    border-bottom: 3px solid #707070;
+    margin-top: 20px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 200px;
+    gap: 150px;
+}
+
+.txt-descricao {
+    width: 100px;
+    font-size: 15px;
+    margin-left: 200px;
+}
+
+.txt-descricao h2 {
+    font-size: 28px;
+}
+
+.sobre {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.descricao-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.descricao-container h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.avaliação {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(75, 62, 62);
+}
+
+.txt-avaliação {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.comentarios {
+    width: auto;
+    margin-left: 250px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.img-comentario img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.img-comentario {
+    height: 130px;
+    width: 115px;
+}
+
+.comentario {
+    display: flex;
+}
+
+.txt-comentario {
+    margin-top: 10px;
+}
+
+.txt-comentario p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -8px;
+}
+
+.txt-comentario p:nth-of-type(3) {
+    font-size: 18px;
+    background-color: #EFEFEF;
+    padding: 10px;
+    border-radius: 3px;
+    width: 900px;
+    height: auto;
+    color: #1C1C1C;
+}
+
+.txt-comentario p:nth-of-type(2) {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Carrossel */
+.carousel {
+    width: 350px;
+    height: 380px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+}
+
+.carousel-inner {
+    width: 100px;
+    height: 350px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, );
+    border-radius: 50%;
+}
+
+.carousel-control-next {
+    margin-right: -70px;
+}
+
+.carousel-control-prev {
+    margin-left: -70px;
+}
+
+.carousel-indicators button {
+    background-color: rgb(156, 156, 156) !important;
+    width: 25px !important;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(54, 54, 54) !important;
+}
+
+/* Estilos para a seção de comentários */
+.adicionar-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.adicionar-comentario textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 870px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 100px;
+    margin-bottom: 20px;
+}
+
+.btn-enviar-comentario {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar-comentario:hover {
+    background-color: #45a049;
+}
+
+.aviso-login {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.sem-comentarios {
+    margin-right: 230px;
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+.comentario {
+    margin-left: -30px;
+    margin-right: 190px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 1000px;
+}
+
+.comentario .img-comentario img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comentario .txt-comentario p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comentario .txt-comentario p:nth-child(2) {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o botão de exclusão */
+.cabecalho-comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+}
+
+.form-excluir-comentario {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1; 
+}
+
+.btn-excluir-comentario {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem;
+    transition: color 0.3s;
+    margin-left: 10px; /* Espaçamento entre o texto e o ícone */
+}
+
+.btn-excluir-comentario:hover {
+    color: #c82333;
+}
+
+/* Restante do seu CSS permanece igual */
+.nome-usuario {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.data-comentario {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.texto-comentario {
+    margin-top: 10px;
+}
+
+/* Estilos para o Toastify com botões */
+.toastify-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.toastify-button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+}
+
+.toastify-confirm {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.toastify-cancel {
+    background-color: #f44336;
+    color: white;
+}
+/* Responsivo */
+
+@media screen and (max-width: 1367px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin-top: -80px;
+        height: 300px;
+    }
+
+    .TL-inp {
+        width: 350px;
+        height: 30px;
+        margin-right: 50px;
+        margin-left: -50px;
+        margin-top: 15px;
+    }
+
+    .TL-inp::placeholder {
+        font-size: 17px;
+    }
+
+    .header-link-tema {
+        margin-right: -20px;
+        margin-left: -60px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .header-img {
+        width: 110px;
+        margin-bottom: 110px;
+        margin-right: 35px;
+        margin-left: -50px;
+    }
+
+    .header-entrar,
+    .header-cadastro {
+        font-size: 20px;
+    }
+
+    .car {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .header-button {
+        margin-left: -10px;
+        margin-bottom: 5px;
+    }
+
+    .header-tema {
+        margin-right: 15px;
+        width: 35px;
+    }
+
+    /* Fim header */
+
+    .Produto {
+        width: 100%;
+    }
+
+    .botao-voltar {
+        width: 30px;
+    }
+
+    .info h2 {
+        font-size: 25px;
+        margin-left: -15px;
+    }
+
+    .preço {
+        margin-left: -15px;
+        font-size: 23px;
+    }
+
+    #p-informacao {
+        margin-left: -15px;
+        max-width: 100%;
+        font-size: 23px;
+        margin-bottom: -80px;
+    }
+
+    .compra-qtde {
+        margin-top: 100px;
+    }
+
+    .quantidade-box label {
+        font-size: 21px;
+    }
+
+    .quantidade-box {
+        margin-right: 2px;
+        margin-bottom: -70px;
+    }
+
+    .input-add {
+        width: 35px;
+    }
+
+    .button-add {
+        width: 35px;
+    }
+
+    .button-add2 {
+        width: 35px;
+    }
+
+    .try-car {
+        width: 50px;
+        margin-left: 50px;
+        margin-top: 62px;
+    }
+
+    .button-comprar {
+        width: 150px;
+        height: 40px;
+        margin-left: -144px;
+        margin-top: 70px;
+        font-size: 15px;
+    }
+
+    .txt-descricao {
+        margin-left: 130px;
+    }
+
+    .txt-descricao h2 {
+        font-size: 28px;
+    }
+
+    .descricao {
+        margin-left: 130px;
+    }
+
+    .sobre h3 {
+        font-size: 25px;
+    }
+
+    .descricao p {
+        font-size: 23px;
+    }
+
+    .comentario {
+        margin-left: -60px;
+        width: 150px;
+    }
+
+    #tamanho-mobile {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1281px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin-top: -80px;
+        height: 300px;
+    }
+
+    .TL-inp {
+        width: 300px;
+        height: 35px;
+        margin-right: 50px;
+        margin-left: -50px;
+        margin-top: 15px;
+    }
+
+    .TL-inp::placeholder {
+        font-size: 18px;
+    }
+
+    .header-link-tema {
+        margin-right: -20px;
+        margin-left: -60px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .header-img {
+        width: 110px;
+        margin-bottom: 110px;
+        margin-right: 35px;
+        margin-left: -50px;
+    }
+
+    .header-entrar,
+    .header-cadastro {
+        font-size: 20px;
+    }
+
+    .car {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .header-button {
+        margin-left: -10px;
+        margin-bottom: 5px;
+    }
+
+    .header-tema {
+        margin-right: 15px;
+        width: 35px;
+    }
+
+    /* Fim header */
+
+    .Produto {
+        width: 100%;
+    }
+
+    .botao-voltar {
+        width: 30px;
+    }
+
+    .info h2 {
+        font-size: 25px;
+        margin-left: -15px;
+    }
+
+    .preço {
+        margin-left: -15px;
+        font-size: 23px;
+    }
+
+    #p-informacao {
+        margin-left: -15px;
+        max-width: 100%;
+        font-size: 23px;
+        margin-bottom: -80px;
+    }
+
+    .compra-qtde {
+        margin-top: 100px;
+    }
+
+    .quantidade-box label {
+        font-size: 18px;
+    }
+
+    .quantidade-box {
+        margin-right: 40px;
+        margin-bottom: -70px;
+    }
+
+    .input-add {
+        width: 35px;
+    }
+
+    .button-add {
+        width: 35px;
+    }
+
+    .button-add2 {
+        width: 35px;
+    }
+
+    .try-car {
+        width: 50px;
+        margin-left: 50px;
+        margin-top: 62px;
+    }
+
+    .button-comprar {
+        width: 105px;
+        height: 35px;
+        margin-left: -144px;
+        margin-top: 70px;
+        font-size: 15px;
+    }
+
+    .botao-voltar {
+        margin-left: 10px;
+    }
+
+    /* carousel */
+
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .carousel-inner {
+        margin-left: -20px;
+    }
+
+
+    .carousel-control-prev {
+        margin-top: -62px;
+        margin-left: -80px;
+    }
+
+    .carousel-control-next {
+        margin-top: -60px;
+        margin-right: -60px;
+    }  
+
+    .txt-descricao {
+        margin-left: 130px;
+    }
+
+    .txt-descricao h2 {
+        font-size: 28px;
+    }
+
+    .descricao {
+        margin-left: 130px;
+    }
+
+    .sobre h3 {
+        font-size: 25px;
+    }
+
+    .descricao p {
+        font-size: 23px;
+    }
+
+    .comentario {
+        margin-left: -100px;
+        width: 150px;
+    }
+
+    #tamanho-mobile {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin-top: -80px;
+        height: 300px;
+    }
+
+    .TL-inp {
+        width: 230px;
+        height: 30px;
+        margin-right: 50px;
+        margin-left: -50px;
+        margin-top: 15px;
+    }
+
+    .TL-inp::placeholder {
+        font-size: 17px;
+    }
+
+    .header-link-tema {
+        margin-right: -20px;
+        margin-left: -60px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .header-img {
+        width: 110px;
+        margin-bottom: 110px;
+        margin-right: 35px;
+        margin-left: -50px;
+    }
+
+    .header-entrar,
+    .header-cadastro {
+        font-size: 21px;
+    }
+
+    .car {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .header-button {
+        margin-left: -10px;
+        margin-bottom: 5px;
+    }
+
+    .header-tema {
+        margin-right: 15px;
+        width: 35px;
+    }
+
+    /* Fim header */
+
+    .botao-voltar {
+        width: 30px;
+    }
+
+    .info h2 {
+        font-size: 23px;
+        margin-left: -45px;
+    }
+
+    .preço {
+        margin-left: -45px;
+        font-size: 21px;
+
+    }
+
+    #p-informacao {
+        margin-left: -45px;
+        max-width: 100%;
+        font-size: 21px;
+        margin-bottom: -80px;
+    }
+
+    .compra-qtde {
+        margin-top: 100px;
+    }
+
+    .quantidade-box label {
+        font-size: 18px;
+    }
+
+    .quantidade-box {
+        margin-right: 40px;
+        margin-bottom: -70px;
+    }
+
+    .input-add {
+        width: 35px;
+    }
+
+    .button-add {
+        width: 35px;
+    }
+
+    .button-add2 {
+        width: 35px;
+    }
+
+    .try-car {
+        width: 50px;
+        margin-left: 15px;
+        margin-top: 62px;
+    }
+
+    .button-comprar {
+        width: 105px;
+        height: 35px;
+        margin-left: -144px;
+        margin-top: 70px;
+        font-size: 15px;
+    }
+
+    .botao-voltar {
+        margin-left: 10px;
+    }
+
+    /* carousel */
+
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .carousel-inner {
+        margin-left: 50px;
+    }
+
+
+    .carousel-control-prev {
+        margin-top: -62px;
+        margin-left: -10px;
+    }
+
+    .carousel-control-next {
+        margin-top: -60px;
+        margin-right: -110px;
+    }
+
+    .txt-descricao {
+        margin-left: 35px;
+    }
+
+    .txt-descricao h2 {
+        font-size: 28px;
+    }
+
+    .descricao {
+        margin-left: 35px;
+    }
+
+    .sobre h3 {
+        font-size: 25px;
+    }
+
+    .descricao p {
+        font-size: 23px;
+    }
+
+    .txt-avaliação h2 {
+        font-size: 26px;
+    }
+
+    .comentario {
+        margin-left: -215px;
+        width: 150px;
+    }
+
+    .img-comentario img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .txt-comentario p:nth-of-type(3) {
+        width: 900px;
+    }
+
+    .txt-comentario p {
+        margin-left: 5px;
+    }
+
+    #tamanho-mobile {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin-top: -80px;
+        height: 300px;
+    }
+
+    .TL-inp {
+        width: 230px;
+        height: 25px;
+        margin-right: 50px;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+
+    .TL-inp::placeholder {
+        font-size: 14px;
+    }
+
+    .header-link-tema {
+        margin-right: -20px;
+        margin-left: -60px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .header-img {
+        width: 80px;
+        margin-bottom: 110px;
+        margin-right: 35px;
+        margin-left: -50px;
+    }
+
+    .header-entrar,
+    .header-cadastro {
+        font-size: 15px;
+    }
+
+    .car {
+        font-size: 23px;
+        margin-left: 50px;
+    }
+
+    .header-button {
+        margin-left: -20px;
+        margin-bottom: 5px;
+    }
+
+    .header-tema {
+        margin-right: 15px;
+        width: 27px;
+    }
+
+    /* Fim header */
+
+    .info h2 {
+        font-size: 21px;
+        margin-left: -45px;
+    }
+
+    .preço {
+        margin-left: -45px;
+        font-size: 18px;
+
+    }
+
+    #p-informacao {
+        margin-left: -45px;
+        max-width: 100%;
+        font-size: 20px;
+        margin-bottom: -80px;
+    }
+
+    .compra-qtde {
+        margin-top: 100px;
+    }
+
+    .quantidade-box label {
+        font-size: 15px;
+    }
+
+    .quantidade-box {
+        margin-right: 40px;
+        margin-bottom: -70px;
+    }
+
+    .input-add {
+        width: 30px;
+    }
+
+    .button-add {
+        width: 30px;
+    }
+
+    .button-add2 {
+        width: 30px;
+    }
+
+    .try-car {
+        width: 40px;
+        margin-left: 45px;
+        margin-top: 62px;
+    }
+
+    .button-comprar {
+        width: 90px;
+        height: 35px;
+        margin-left: -130px;
+        margin-top: 70px;
+        font-size: 15px;
+    }
+
+    .botao-voltar {
+        margin-left: 10px;
+    }
+
+    /* carousel */
+
+    .carousel-indicators button {
+        margin-top: -100px;
+    }
+
+
+    .carousel-inner img {
+        object-fit: contain;
+        height: 180px;
+    }
+
+    .carousel-inner {
+        margin-left: 50px;
+    }
+
+
+    .carousel-control-prev {
+        margin-top: -123px;
+        margin-left: 10px;
+    }
+
+    .carousel-control-next {
+        margin-top: -130px;
+        margin-right: -100px;
+    }
+
+    .txt-descricao {
+        margin-left: 35px;
+    }
+
+    .txt-descricao h2 {
+        font-size: 25px;
+    }
+
+    .descricao {
+        margin-left: 35px;
+    }
+
+    .sobre h3 {
+        font-size: 25px;
+    }
+
+    .descricao p {
+        font-size: 18px;
+    }
+
+    .txt-avaliação h2 {
+        font-size: 20px;
+    }
+
+    .comentario {
+        margin-left: -235px;
+        width: 150px;
+    }
+
+    .img-comentario img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .txt-comentario p:nth-of-type(3) {
+        width: 700px;
+    }
+
+    .txt-comentario p {
+        margin-left: 5px;
+    }
+
+    #tamanho-mobile {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        margin-top: -80px;
+        height: 300px;
+    }
+
+    .TL-inp {
+        width: 130px;
+        height: 25px;
+        margin-right: 50px;
+        margin-left: -50px;
+    }
+
+    .TL-inp::placeholder {
+        font-size: 12px;
+    }
+
+    .header-link-tema {
+        margin-right: -20px;
+        margin-left: -60px;
+        margin-bottom: 5px;
+    }
+
+    .header-img {
+        width: 50px;
+        margin-bottom: 110px;
+        margin-right: 35px;
+        margin-left: -50px;
+    }
+
+    .header-entrar,
+    .header-cadastro {
+        font-size: 12px;
+    }
+
+    .car {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .header-button {
+        margin-left: -20px;
+    }
+
+    .header-tema {
+        margin-right: 15px;
+        width: 23px;
+    }
+
+    /* Fim header */
+
+    .info h2 {
+        font-size: 15px;
+        margin-left: -175px;
+        margin-top: 890px;
+    }
+
+    .preço {
+        margin-left: -175px;
+        font-size: 15px;
+
+    }
+
+    #p-informacao {
+        margin-left: -175px;
+        max-width: 25%;
+        font-size: 12px;
+    }
+
+    .quantidade-box label {
+        font-size: 12px;
+        margin-right: 10px;
+        margin-top: -7px;
+    }
+
+    .quantidade-box {
+        margin-top: -120px;
+        margin-right: 365px;
+    }
+
+    .input-add {
+        width: 25px;
+    }
+
+    .button-add {
+        width: 25px;
+    }
+
+    .button-add2 {
+        width: 25px;
+    }
+
+    .try-car {
+        width: 30px;
+        margin-left: -180px;
+        margin-top: -358px;
+    }
+
+    .button-comprar {
+        width: 75px;
+        height: 30px;
+        margin-left: -440px;
+        margin-bottom: 730px;
+        font-size: 10px;
+    }
+
+    .botao-voltar {
+        margin-left: 10px;
+    }
+
+    /* carousel */
+
+    .carousel-inner {
+        margin-top: -35px;
+        margin-left: 435px;
+    }
+
+    .carousel-item img {
+        object-fit: contain;
+        height: 120px;
+        margin-top: 30px;
+        margin-left: -90px;
+    }
+
+    .carrousel-item active {
+        max-width: 100px;
+    }
+
+    .carousel-control-prev {
+        margin-top: -190px;
+        margin-left: 330px;
+    }
+
+    .carousel-control-next {
+        margin-top: -190px;
+        margin-right: -370px;
+    }
+
+    .txt-descricao {
+        margin-left: 100px;
+    }
+
+    .txt-descricao h2 {
+        font-size: 23px;
+    }
+
+    .descricao {
+        margin-left: 35px;
+    }
+
+    .sobre h3 {
+        font-size: 18px;
+    }
+
+    .descricao p {
+        font-size: 15px;
+    }
+
+    .txt-avaliação h2 {
+        font-size: 21px;
+    }
+
+    .comentario {
+        margin-left: -235px;
+        width: 150px;
+    }
+
+    .img-comentario img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .txt-comentario p:nth-of-type(3) {
+        width: 300px;
+    }
+
+    .txt-comentario p {
+        margin-left: 5px;
+    }
+
+    #tamanho-mobile {
+        font-size: 15px;
+    }
+}
